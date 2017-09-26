@@ -1,0 +1,24 @@
+@media (min-width: 600px) {
+	.toggleNav {
+		display: none;
+	}
+
+	.flex_styles {
+		background-color:#f4f2f0;
+	}
+	
+	.full_menu{
+	display:flex;
+	}
+
+	img {
+		object-position: 0 0;
+	}
+
+	.content_container{
+
+		width: 600px;
+		margin: 0 auto; 
+	}
+}
+

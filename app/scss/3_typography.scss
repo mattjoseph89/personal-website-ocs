@@ -1,0 +1,53 @@
+.blog_header {
+	font-size: 13px;
+	color:#b7b7b7;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1.4px;
+	font-weight: bolder;
+	padding-bottom: 20px;
+	padding-top: 20px;
+
+}
+.timestamp {
+	font-size: 12px;
+	color:#b7b7b7;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0px;
+	font-weight: bold;
+}
+h1 {
+	font-size: 30px; 
+	font-family: 'Mukta Mahee', sans-serif;
+	letter-spacing: -1px;
+	font-weight: bolder;
+	line-height: 30px;
+	margin: 20px 0px;
+	text-transform: uppercase;
+}
+
+h2 {font-size: 26px; 
+	font-family: 'Mukta Mahee', sans-serif;
+	letter-spacing: 0px;
+	font-weight: bolder;
+	line-height: 30px;
+	margin: 20px 0px;
+}
+.post_preview{
+	font-size: 13px;
+	color:#b7b7b7;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	margin:0px;
+}
+.post_content{
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0px;
+	font-weight: bold;
+	margin: 0px;
+	line-height: 24px;
+	border-top: 1px solid #f2efed;
+	padding-top: 20px;
+}
