@@ -1,0 +1,71 @@
+$header_font:'Teko', sans-serif;
+// layout----------------------------
+
+.cover_letter_container{
+	width: 99.5%; 
+	display: flex;
+	flex-direction: row;  
+	margin:auto;
+
+	.column1{
+		background-color: black;
+		width: .3%; 
+	}
+	.column2{
+		background-color: black;
+		width: .6%;
+		margin:0px .3%; 	
+	}
+	.column3{
+		background-color: black;
+		width: .9%; 
+	}
+
+	.main_content{
+		width: 100%; 
+		display: flex;
+		flex-direction: column; 
+		align-items: center; 
+
+		.cover_letter_header{
+			width:100%; 
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			margin: 50px 0px 50px 0px; 
+		}
+
+	}
+
+	.cover_letter_about{
+		width:100%;
+		display: flex;
+		flex-direction: row;
+		justify-content:space-around; 
+	}
+}
+
+//typography------------------------
+
+.cover_letter_container{
+
+	.cover_letter_header{
+		font-family:$header_font;
+		font-size: 75px; 
+		.company{ 
+			padding: 30px 30px 30px 0px; 
+			margin:0px 3px; 
+		}
+		.me{ 
+			padding: 30px 0px 30px 30px;  
+			margin:0px 3px; 
+		}
+	}
+
+	.cover_letter_about{
+		h2{
+			font-size: 45px;
+			font-family:$header_font;	 
+		}
+	}
+}
