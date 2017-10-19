@@ -84,7 +84,8 @@ a {
   margin: auto; }
   .cover_letter_container .column1 {
     background-color: black;
-    width: .3%; }
+    width: .3%;
+    padding: -100px 0px; }
   .cover_letter_container .column2 {
     background-color: black;
     width: .6%;
