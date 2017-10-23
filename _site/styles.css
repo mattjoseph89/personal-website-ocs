@@ -75,7 +75,11 @@ a {
   font-family: 'Teko', sans-serif;
   color: #a6edcb;
   line-height: 60px;
-  -webkit-text-stroke: 3px black; }
+  -webkit-text-stroke: 3px black;
+  -moz-text-stroke: 3px black;
+  -o-text-stroke: 3px black;
+  -ms-text-stroke: 3px black;
+  -webkit-font-smoothing: antialiased; }
 
 .cover_letter_container {
   background: radial-gradient(#fff, #aaa);
