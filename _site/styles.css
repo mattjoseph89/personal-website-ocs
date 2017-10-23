@@ -78,6 +78,7 @@ a {
   -webkit-text-stroke: 3px black; }
 
 .cover_letter_container {
+  background: radial-gradient(#fff, #aaa);
   width: 99.5%;
   display: flex;
   flex-direction: row;
@@ -460,7 +461,7 @@ a:hover, a li:hover, .fa:hover {
   justify-content: center;
   width: 100%; }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .toggleNav {
     display: none; }
 
