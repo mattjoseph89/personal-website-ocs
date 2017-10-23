@@ -455,6 +455,11 @@ a {
 a:hover, a li:hover, .fa:hover {
   color: teal; }
 
+.resume {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
 @media (min-width: 600px) {
   .toggleNav {
     display: none; }
@@ -471,7 +476,3 @@ a:hover, a li:hover, .fa:hover {
   .content_container {
     width: 600px;
     margin: 0 auto; } }
-.resume {
-  display: flex;
-  justify-content: center;
-  width: 100%; }
