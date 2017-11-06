@@ -71,19 +71,26 @@ a {
 .clearfix {
   display: inline-block; }
 
-.header_font, .cover_letter_container .cover_letter_header, .cover_letter_container .cover_letter_about_left h2, .cover_letter_container .cover_letter_about_right h2, .cover_letter_container .cover_letter_portfolio h2, .cover_letter_container .cover_letter_contact h2 {
+.mainstroke, .cover_letter_container .work_sample_header .project, .cover_letter_container h2, .cover_letter_container .cover_letter_header .company {
+  text-shadow: 0px 0px 0 #000, -1px -1px 0 #000,  1px -1px 0 #000,  -1px 1px 0 #000,  1px 1px 0 #000; }
+
+.header_font, .cover_letter_container .cover_letter_header, .cover_letter_container .cover_letter_about_left h2, .cover_letter_container .cover_letter_about_right h2 {
   font-family: 'Teko', sans-serif;
   color: #a6edcb;
   line-height: 60px;
-  -webkit-text-stroke: 3px black;
-  -moz-text-stroke: 3px black;
-  -o-text-stroke: 3px black;
-  -ms-text-stroke: 3px black;
   -webkit-font-smoothing: antialiased; }
 
 .cover_letter_container {
-  background: radial-gradient(#fff, #aaa);
-  width: 99.5%;
+  background: -moz-linear-gradient(left, #e2e2e2 0%, #fefefe 40%, #fefefe 60%, #dbdbdb 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #e2e2e2 0%, #fefefe 40%, #fefefe 60%, #dbdbdb 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #e2e2e2 0%, #fefefe 40%, #fefefe 60%, #dbdbdb 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#dbdbdb',GradientType=1 );
+  /* IE6-9 */
+  z-index: -2;
+  width: 100%;
   display: flex;
   flex-direction: row;
   margin: auto; }
@@ -188,7 +195,9 @@ a {
     border: 4px solid black;
     box-shadow: 1px 1px 10px grey; }
   .cover_letter_container .work_sample {
-    margin: 2%; }
+    margin: 2%;
+    margin-top: 25px;
+    margin-bottom: 25px; }
 
 .cover_letter_container .work_sample_header {
   font-family: 'Open Sans', sans-serif;
@@ -200,8 +209,7 @@ a {
   .cover_letter_container .work_sample_header .project {
     font-family: 'Teko', sans-serif;
     color: #a6e4ed;
-    font-size: 36px;
-    -webkit-text-stroke: 3px black; }
+    font-size: 36px; }
 .cover_letter_container p {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
@@ -218,16 +226,23 @@ a {
   .cover_letter_container .cover_letter_header .me {
     padding: 30px 0px 30px 30px;
     margin: 0px 3px;
-    -webkit-text-stroke: 1px black;
     text-shadow: -4px 4px 0 #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
 .cover_letter_container .cover_letter_about_left h2 {
   font-size: 45px; }
 .cover_letter_container .cover_letter_about_right h2 {
   font-size: 45px; }
 .cover_letter_container .cover_letter_portfolio h2 {
-  font-size: 45px; }
+  font-size: 45px;
+  font-family: 'Teko', sans-serif;
+  color: #a6e4ed;
+  line-height: 60px;
+  -webkit-font-smoothing: antialiased; }
 .cover_letter_container .cover_letter_contact h2 {
-  font-size: 45px; }
+  font-size: 45px;
+  font-family: 'Teko', sans-serif;
+  color: #eda9a6;
+  line-height: 60px;
+  -webkit-font-smoothing: antialiased; }
 
 :focus {
   outline: none; }
@@ -237,31 +252,18 @@ button {
   font-size: 20px;
   font-weight: bold;
   border: 4px solid black;
-  color: black;
+  color: #eda9a6;
   position: relative;
   margin: 2rem 3rem;
   padding: 1rem 2rem;
-  font-size: 1.15rem;
+  font-size: 25px;
+  text-shadow: 0px 0px 0 #000, -1px -1px 0 #000,  1px -1px 0 #000,  -1px 1px 0 #000,  1px 1px 0 #000;
   background-color: transparent;
   cursor: pointer; }
 
-button::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: -.6rem;
-  top: -.5rem;
-  z-index: -1;
-  background-color: #eda9a6;
-  transition: all 200ms ease-out; }
-
-button:hover::before {
-  top: 0;
-  left: 0; }
-
-.button-contact:active {
-  transform: translateY(3px); }
+button:hover {
+  color: #fefefe;
+  background: #eda9a6; }
 
 /*-------------------------------------page structure------------------------------------*/
 body {
